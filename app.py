@@ -85,6 +85,8 @@ if sample_img_choice:
     img_array = img_array/255.0
     predictions = model.predict(img_array)
     label=labels[np.argmax(predictions)]
+    image1 = Image.open("test_cricket.jpg")
+    st.image(image1, caption="Uploaded Image", use_column_width=True)    
     st.markdown(
         f"<h2 style='text-align: center;'>{label}</h2>",
         unsafe_allow_html=True,
