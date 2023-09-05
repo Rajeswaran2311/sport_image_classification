@@ -48,7 +48,7 @@ labels = {
 
 
 uploaded_file = st.file_uploader(
-    "Upload an image of a sport being played:", type=('jpg','png')
+    "Upload an image of a sport being played:", type='jpg'
 )
 predictions=-1
 if uploaded_file is not None:
