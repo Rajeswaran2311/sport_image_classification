@@ -79,7 +79,7 @@ sample_img_choice = st.button("Use Sample Image")
 
 if sample_img_choice:
     image1 = Image.open("test_cricket.jpg")
-    image1=image.smart_resize(image1,(256,256))
+    image1=image.smart_resize(image1,(128,128))
     img_array = image.img_to_array(image1)
     img_array = np.expand_dims(img_array, axis=0)
     img_array = img_array/255.0
